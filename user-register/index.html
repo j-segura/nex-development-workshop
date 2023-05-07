@@ -1,0 +1,29 @@
+<!-- Registro de usuario
+
+Crear un formulario que solicite al usuario su nombre, correo electrónico y contraseña.
+En el backend, se debe validar que el nombre y el correo electrónico no estén vacíos,
+que el correo electrónico tenga un formato válido (ej. usuario@dominio.com)
+y que la contraseña tenga al menos 8 caracteres. Si la información es válida,
+se debe guardar en una base de datos y mostrar un mensaje de éxito. Si hay errores de validación,
+se deben mostrar mensajes de error específicos.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Register User</title>
+</head>
+<body>
+    <form action="./controller/index.php" method="POST" class="form-register">
+        <h4>Hello World!</h4>
+        <input class="controls" type="text" name="name" id="name" placeholder="User name" required>
+        <input class="controls" type="email" name="email" id="email" placeholder="Email" required>
+        <input class="controls" type="password" name="password" id="password" placeholder="Password" required>  
+        <input class="botons" type="submit" value="Register">
+    </form>
+</body>
+</html>
